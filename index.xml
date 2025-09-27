@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Tillamen - Write Up &amp; Stuff</title>
+      <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/</link>
+      <description>Últimas 10 notas on Tillamen - Write Up &amp; Stuff</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>AES Intro</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/AES-Intro</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/AES-Intro</guid>
+    <description><![CDATA[ We are given the following: from Crypto.Cipher import AES from Crypto.Random import get_random_bytes from Crypto.Util.Padding import pad def generate_key_iv(): # Generate random 256-bit key and random 128-bit IV key = get_random_bytes(32) # AES-256 key (32 bytes) iv = get_random_bytes(16) # AES bloc... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>Aleatoire</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/Aleatoire</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/Aleatoire</guid>
+    <description><![CDATA[ We are now given: import random from datetime import datetime from base64 import b64encode from Crypto.Cipher import AES # PyCryptodome from Crypto.Util.Padding import pad, unpad BLOCK_SIZE = 32 random.seed(int(datetime.now().timestamp())) def get_random_bytes(size): bytes_array = bytearray(random.g... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>Game Of Luck</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/Game-of-Luck</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/Game-of-Luck</guid>
+    <description><![CDATA[ We are now given: #!/usr/local/bin/python import random flag = open(&#039;flag.txt&#039;, &#039;r&#039;).read() def game_of_luck(): good_guesses = 0 for x in range(690): if good_guesses == 10: print(f&quot;Bien joué ! Tu as remporté le flag suivant: {flag}&quot;) break number = int(random.getrandbit... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>RSA Intro</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/RSA-Intro</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/RSA-Intro</guid>
+    <description><![CDATA[ We are now given: from Crypto.Util.number import getPrime, bytes_to_long, inverse # pip install pycrypto FLAG = b&#039;REDACTED&#039; # c&#039;est pas le flag hein 😔 def gen_key(): p = getPrime(1024) q = getPrime(1024) n = p * q e = 65537 return p, q, n, e p, q, n, e = gen_key() m = bytes_to_long(F... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>RSA 2</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/RSA2</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/RSA2</guid>
+    <description><![CDATA[ We are now given: n = 92759448658226112225624045166467699487227189687228306666681698417999476823255144665619584939699668831251423065215248773667979129374187295004151275292876444193988250219670530677042349519587657596146755915042624951835397746094188218860026753528953020673938386227925429324345721374... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>RSA 3</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/RSA3</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Crypto/RSA3</guid>
+    <description><![CDATA[ We are now given: c = 66496533268970749969432812059290419894898521518726905732590511033826664273441569098499105643264514559399624247023350360812530836519946740466969692153128285225592109741757840197593845231927985498568066574542682269343797480802680009187051855202081693590630393799066611926266511777... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>Mais ou est passé mon flag</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Mais-ou-est-passe-mon-flag</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Mais-ou-est-passe-mon-flag</guid>
+    <description><![CDATA[ We are given a disk.img file and asked to recover the flag. We are told that the flag has been deleted by mistake. ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>Mais qui est le photographe?</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Mais-qui-est-le-potographe</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Mais-qui-est-le-potographe</guid>
+    <description><![CDATA[ I am given the following image: I must find out who took this photo: Aperisolve ExifTool Creator : Michel DUPUIS CTFREI{MICHEL-DUPUIS}. ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>Memoire 1</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Memoire-1</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Memoire-1</guid>
+    <description><![CDATA[ I am given a .vmem file and I must find out the name of the computer Volatility 3 python3 vol.py -f ../../../ctfrei/ forensic/memory/memory.vmem windows.info.Info Volatility 3 Framework 2.10.0 Progress: 100.00 PDB scanning finished Variable Value Kernel Base 0xf80330002000 DTB 0x1ad000 Symbols file:... ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item><item>
+    <title>Memoire 2</title>
+    <link>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Memoire-2</link>
+    <guid>https://https://t1114m3n.github.io/Write-Ups-Stuff/CTF_Write_Ups/2024/CTFREI_intro-2024/Forensic/Memoire-2</guid>
+    <description><![CDATA[ I am asked to get a Word file that the user of the PC was writing on. ]]></description>
+    <pubDate>Sat, 27 Sep 2025 19:33:43 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
